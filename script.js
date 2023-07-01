@@ -7,12 +7,9 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
 
 function generatePassword() {
   // prompt how many characters
@@ -22,12 +19,10 @@ function generatePassword() {
   var upper = ["A","B","C","D","E","F","G","H","I","J","K","L","M",'N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
   var special = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '`', '~', '#', '{', '}', '[', ']', '/', '"', '|', ';', ':', '<', '>', '?', '.'];
   var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,];
-
   // What types of charctyers 
   // special, number, upper, lower
   // window.confirm
   // Use answers to make password
-  
   // vars that include all possible charcters
   // seperate vars for each type, arrays
   // example var upperLetters = ["A", "B", "C"]
@@ -35,7 +30,6 @@ function generatePassword() {
   var Upper = window.confirm("Would you like uppercase alphabetic characters in your password?");
   var Special = window.confirm("Would you like special characters in your password?");
   var Numbers = window.confirm("Would you like numeric characters in your password?");
-
 // take all true arrays and concat into new array -loop
 
   var passwordChar = [];
@@ -59,8 +53,6 @@ function generatePassword() {
   } 
 
  // choose random chars from arr based on user input
-
- 
   // var push into new array
 // var password = turn array into string .toString()
   var password= "";
@@ -70,7 +62,5 @@ function generatePassword() {
   }
   // return password;
   return password;
-
   };
-
 generatePassword();
